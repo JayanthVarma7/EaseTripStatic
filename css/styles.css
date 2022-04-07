@@ -1,0 +1,246 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  position: relative;
+}
+
+body {
+  overflow-y: auto;
+  min-height: 100vh;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+footer {
+  background: #f1f1f1;
+  width: 100%;
+  padding: 16px 0px;
+  color: #999;
+  vertical-align: bottom;
+  margin-top: 40px;
+  text-align: center;
+  /* width: 100%; */
+  /* height: 2.5rem;   */
+}
+
+.banner {
+  height: 500px;
+  width: 100%;
+  background: #999;
+  margin: 20px 0px;
+}
+
+.content {
+  padding: 20px 0px;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+
+/* ================================== */
+/* Layout page CSS */
+/* ================================== */
+
+.tile {
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+  margin: 15px;
+  border: none !important;
+  border-radius: 8px !important;
+}
+
+.tile img {
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+  border-radius: 8px;
+}
+.tile img:hover {
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+  filter: brightness(0.4);
+  transform: scale(1.1);
+}
+
+/* Hint: Notice the position:absolute and z-index properties. */
+/* Think about how those in relation to the existing "tile" classes. */
+.tile-text {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #f1f1f1;
+  width:100%;
+  /* background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); */
+  border-radius: 8px;
+}
+img {
+  float: left;
+  width:  200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-img-top{
+  border-radius: 8px;
+}
+
+
+
+/* .card .content{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+} */
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /*linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  text-align: center;
+  /* TODO: MODULE_LAYOUT */
+  /* 1. Set a specific height. */
+  /* 2. Position and center the image to scale nicely on all screens. */
+}
+
+.hero-subheading {
+  font-size: 24px;
+  font-weight: 100;
+}
+.hero-input {
+  width: 80%;
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+}
+#hero-img-container{
+  margin: 0px 0px 15px 0px;
+}
+
+
+
+.nav-link {
+  margin-right: 36px;
+}
+
+/* ================================== */
+/* Adventures grid page CSS */
+/* ================================== */
+
+.container p{
+  padding-left: 30px;
+}
+
+.container .row{
+  margin: 0px;
+}
+
+.adventure-card {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  border-radius: 8px !important;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+.adventure-card .row{
+  border-radius: 8px 8px 2px 2px;
+  padding: 10px 0px;
+  margin: 0rem;
+}
+.adventure-card .row .col{
+  padding: 0px;
+  padding-left: 5px;
+}
+.adventure-card .row .price{
+  padding: 0px;
+  padding-right: 5px;
+}
+.adventure-card img {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  border-radius: 8px 8px 2px 2px;
+  object-fit: cover;
+}
+.adventure-card img:hover {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+  filter: brightness(0.6);
+}
+
+/* ================================== */
+/* Adventure details page CSS */
+/* ================================== */
+
+.adventure-detail-card {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+
+}
+
+.adventure-card-image {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+}
+.adventure-card-image:hover {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+}
+.experience-content ul li {
+  margin-left: 16px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktops phones: */
+  #reservation {
+    width: 400px;
+    position: fixed;
+  }
+}
+
+
+.img-cell1 {
+  height: 21rem;
+}
+
+.img-cell2{
+  
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.img-cell3{
+  height: 10rem;
+}
+
+.img-cells{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  
+}
+
+.img-cells:hover{
+  filter: brightness(0.6);
+  transition: all 0.2s;
+}

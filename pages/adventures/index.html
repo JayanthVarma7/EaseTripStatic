@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EaseTrip Adventures</title>
+  <link rel="stylesheet" href="../../css/styles.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+  crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- TODO: MODULE_ADVENTURES_GRID -->
+  <!-- 1. Copy navigation bar HTML from Landing page document -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+     <div class="navbar-brand mr-auto"><a href="#">EaseTrip</a></div>
+     <div id="collapsibleNavbar" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+        </ul>
+     </div>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+   </nav> 
+   
+  <div class="container">
+    <p style="font-size: 2rem; margin-top: 3rem;"><strong>Explore all adventures</strong></p>
+    <p style="font-size: 1rem;">Here's a list of adventures that you can explore in city</p>
+    <div class="content container">
+      <!-- TODO: MODULE_ADVENTURES_GRID -->
+      <!-- 1. Create the grid of adventures by adding child elements as required. -->
+      <div class="row">
+        <div class="col-sm">
+          <div class="card adventure-card">
+            <a href="/pages/adventures/resort/index.html"><img class="card-img-top" src="/assets/adventures/resort.jpg" alt="resort Card image"></a>
+            <div class="row"> 
+                <div class="col"><h5 style="margin-bottom: 0;"><strong>Resort</strong></h5></div>
+                <div class="col price"><h5 class="text-right" style="margin-bottom: 0;">Rs. 1200</h5></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card adventure-card">
+            <a href="#"><img class="card-img-top" src="/assets/adventures/tower.jpg" alt="tower Card image"></a>
+            <div class="row"> 
+                <div class="col"><h5 style="margin-bottom: 0;"><strong>Tower</strong></h5></div>
+                <div class="col price"><h5 class="text-right" style="margin-bottom: 0;">Rs. 1800</h5></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card adventure-card">
+            <a href="#"><img class="card-img-top" src="/assets/adventures/mount.jpg" alt="skiing Card image"></a>
+            <div class="row"> 
+                <div class="col"><h5 style="margin-bottom: 0;"><strong>Skiing</strong></h5></div>
+                <div class="col price"><h5 class="text-right" style="margin-bottom: 0;">Rs. 1900</h5></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card adventure-card">
+            <a href="#"><img class="card-img-top" src="/assets/adventures/university.jpg" alt="university Card image"></a>
+            <div class="row"> 
+                <div class="col"><h5 style="margin-bottom: 0;"><strong>University</strong></h5></div>
+                <div class="col price"><h5 class="text-right" style="margin-bottom: 0;">Rs. 800</h5></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="card adventure-card">
+            <a href="#"><img class="card-img-top" src="/assets/adventures/market.jpg" alt="Market Card image"></a>
+            <div class="row"> 
+                <div class="col"><h5 style="margin-bottom: 0;"><strong>IT park</strong></h5></div>
+                <div class="col price"><h5 class="text-right" style="margin-bottom: 0;">Rs. 1200</h5></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card adventure-card">
+            <a href="#"><img class="card-img-top" src="/assets/adventures/church.jpg" alt="Boating Card image"></a>
+            <div class="row"> 
+                <div class="col"><h5 style="margin-bottom: 0;"><strong>Boating</strong></h5></div>
+                <div class="col price"><h5 class="text-right" style="margin-bottom: 0;">Rs. 1800</h5></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card adventure-card">
+            <a href="#"><img class="card-img-top" src="/assets/adventures/canopy.jpg" alt="canopy Card image"></a>
+            <div class="row"> 
+                <div class="col"><h5 style="margin-bottom: 0;"><strong>Canopy</strong></h5></div>
+                <div class="col price"><h5 class="text-right" style="margin-bottom: 0;">Rs. 1800</h5></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card adventure-card">
+            <a href="#"><img class="card-img-top" src="/assets/adventures/huts.jpg" alt="Beachside Card image"></a>
+            <div class="row"> 
+                <div class="col"><h5 style="margin-bottom: 0;"><strong>Alleys</strong></h5></div>
+                <div class="col price"><h5 class="text-right" style="margin-bottom: 0;">Rs. 800</h5></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">© EaseTrip 2021</div>
+  </footer>
+  
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</body>
+
+</html>
